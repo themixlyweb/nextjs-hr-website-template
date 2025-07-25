@@ -1,0 +1,179 @@
+/* Text Colors */
+
+.text-main {
+  color: #697f90 !important;
+}
+
+.text-second {
+  color: #697f90 !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+/* Background Colors */
+.dark-bg {
+  background-color: #697f90 !important;
+}
+
+.secondary-bg {
+  background-color: #697f90 !important;
+}
+
+/* Link Hover Effects */
+.link h3:hover,
+.link:hover h4 {
+  color: #697f90 !important;
+}
+
+/* Animated Gradient Text */
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+h1 span,
+h2 span,
+h3 span {
+  background-image: linear-gradient(
+    90deg,
+    rgb(253, 107, 54, 0.6) 0%,
+    rgba(246, 137, 61, 1) 38%,
+    rgba(254, 188, 56, 1) 100%
+  );
+  background-size: 200% auto !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  animation: textclip 4s linear infinite !important;
+}
+
+h2 span em {
+  background-image: linear-gradient(
+    90deg,
+    rgba(253, 107, 54, 0.6) 0%,
+    rgba(246, 137, 61, 1) 38%,
+    rgba(254, 188, 56, 1) 100%
+  ) !important;
+  background-size: 200% auto !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  animation: textclip 4s linear infinite !important;
+}
+
+/* Section Headings */
+.section h3::before {
+  content: '';
+  display: inline-block;
+  border: 1px solid #20b0ed;
+  width: 35px;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+/* Borders */
+.border-dotted {
+  border: 3px dotted #697f90 !important;
+}
+
+/* Navigation Styling */
+.navbar-dark .navbar-nav .nav-link {
+  color: white !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: #fff !important;
+  color: #697f90 !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  background-color: #697f90;
+  color: #fff !important;
+}
+
+
+.nav-link:hover {
+  background-color: #697f90 !important;
+  color: #fff !important;
+}
+
+.nav-link .active,
+.nav-link:focus {
+  color: #697f90 !important;
+}
+
+.nav-link {
+  padding: 0.45rem 0.75rem !important;
+  margin: 1rem 1rem !important;
+}
+
+.navbar-expand-lg .navbar-brand {
+  padding: 0 !important;
+}
+
+.navbar-expand-lg.transparent:not(.fixed) {
+  padding-top: 0 !important;
+}
+
+/* Mail Section */
+.mail .link {
+  color: #ffffff !important;
+}
+
+/* Footer Widgets */
+.widget ul li a:hover {
+  color: #fff !important;
+  text-decoration: underline !important;
+}
+
+/* Video Styling */
+.video-large {
+  height: 600px;
+  object-fit: cover;
+}
+
+/* Services Card */
+.card-services {
+  width: 375px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  opacity: 1;
+  transition: all 0.8s ease;
+  height: auto;
+}
+
+.card-services .content {
+  transition: all 0.8s ease;
+}
+
+.card-services:hover .content {
+  background: linear-gradient(90deg, rgba(246, 137, 61, 0.6) 0%, rgba(254, 188, 56, 0.8) 100%);
+  transform: translateY(-5px);
+}
+
+.card-services img {
+  transition: all ease 0.5s;
+}
+
+.card-services:hover img {
+  transform: translateY(-20px);
+}
+
+.card-services h3 {
+  margin-bottom: 0;
+  font: 600 24px/34px 'Proxima Nova', sans-serif;
+  color: #374957;
+  text-transform: unset !important;
+}
+
+.card-services p {
+  margin: 0;
+  padding: 0 25px 30px;
+  font: 400 18px/30px 'Proxima Nova', sans-serif;
+  color: #374957;
+  opacity: 0.83;
+}
+
